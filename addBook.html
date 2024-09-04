@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add/Edit Book</title>
+    <link rel="stylesheet" href="css/addBook.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Tambah/Edit Buku</h2>
+      <form action="process.php" method="POST">
+        <label for="judul">Judul:</label>
+        <input type="text" id="judul" name="judul" required />
+
+        <label for="penulis">Penulis:</label>
+        <input type="text" id="penulis" name="penulis" required />
+
+        <label for="tahun">Tahun Terbit:</label>
+        <input type="number" id="tahun" name="tahun" required />
+
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre" required />
+
+        <button type="submit">Simpan</button>
+        <button type="button" onclick="window.location.href='index.html'">
+          Batal
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
